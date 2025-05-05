@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História - Luminus</title>
+    <link rel="stylesheet" href="src/css/subjects.css">
+    <link rel="shortcut icon" href="src/img/LOGO-ILUMINUS-1.1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="src/js/sidebar.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <main>
+            <a href="index.html">
+                <img src="src/img/LOGO-ILUMINUS-1.1.png" alt>
+                LUMINUS
+            </a>
+            <span>
+                <input type="search" placeholder="Pesquisar...">
+                <i class='bx bx-search-alt-2'></i>
+            </span>
+        </main>
+        <aside>
+            <a href class="navig">Suporte</a>
+            <a href="login.html" class="btn-login"><i class='bx bxs-user'></i> Entrar</a>
+        </aside>
+    </header>
+
+    <nav id="sidebar">
+        <ul>
+            <h2>HISTÓRIA</h2>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Segunda Guerra</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <a href="historiaintro.html">
+                            <li>Introdução</li>
+                        </a>
+                        <li><button onclick="myFunction()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <a href="historiaquizz.html">
+                            <li>Quizzes e
+                                Desafios</li>
+                        </a>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Guerra Fria</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><button onclick="myFunction1()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction1()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction1()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <li><a href="historiaquizz.html">Quizzes e
+                                Desafios</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>História do Brasil</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><button onclick="myFunction2()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction2()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction2()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <li><a href="historiaquizz.html">Quizzes e
+                                Desafios</a></li>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebarbottom">
+            <a class="configs">
+                <i class='bx bxs-cog'></i> CONFIG. DO USUÁRIO
+            </a>
+            <div class="line"></div>
+            <a href="#" class="user">
+                <div class="status">
+                    <div class="iconcircle">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <b>Adicionar usuário
+                        <i class='bx bxs-user-plus'></i>
+                    </b>
+                </div>
+            </a>
+        </div>
+    </nav>
+    
+    <article>
+        <div class="quiz-container">
+            <div class="title">
+                <h1>Quiz - História I</h1>
+            </div>
+            <div id="quizForm">
+                <div class="qsts">
+                    <!-- MUDE O VALOR DO NAME PARA CADA QUESTAO -->
+                    <div class="question">
+                        <p>1. (Unemat) A Segunda Grande Guerra (1939-1945) adquiriu caráter mundial a partir de 7 de
+                            dezembro de 1941, quando:</p>
+                        <label><input type="radio" name="q1" value="a"> a) os russos tomaram a iniciativa de anexar os
+                            Estados Bálticos.</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) os alemães invadiram o litoral mediterrâneo
+                            da África.</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) os japoneses atacaram a base norte-americana
+                            de Pearl Harbor</label><br>
+                        <label><input type="radio" name="q1" value="d"> d) os franceses, por determinação do marechal
+                            Pétain, ocuparam o Sudeste da Ásia;</label><br>
+                        <label><input type="radio" name="q1" value="e"> e) os chineses cederam a maior parte de seu
+                            território às tropas do Eixo.</label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+                    <div class="question">
+                        <p>2. (UFRN) Em relação à Segunda Guerra Mundial é correto afirmar que:</p>
+                        <label><input type="radio" name="q2" value="a"> a) Hitler empreendeu uma implacável perseguição
+                            aos judeus, que resultou na morte de seis milhões de pessoas.
+                        </label><br>
+                        <label><input type="radio" name="q2" value="b"> b) os norte-americanos permaneceram neutros na
+                            guerra até 1941, quando bombardearam Hiroshima e Nagasaki.
+                        </label><br>
+                        <label><input type="radio" name="q2" value="c"> c) De Gaulle foi o chefe do governo de Vichy.
+                        </label><br>
+                        <label><input type="radio" name="q2" value="d"> d) com o ataque alemão a Pearl Harbor, os
+                            norte-americanos resolveram entrar na guerra.
+                        </label><br>
+                        <label><input type="radio" name="q2" value="e"> e) a Crise de 1929 nada teve a ver com a Segunda
+                            Guerra Mundial.</label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+                    <div class="question">
+                        <p>3. (Enem/2009) O ataque japonês a Pearl Harbor e a consequente guerra entre americanos e
+                            japoneses no Pacífico foi resultado de um processo de desgaste das relações entre ambos.
+                            Depois de 1934, os japoneses passaram a falar mais desinibidamente da “Esfera de
+                            Coprosperidade da Grande Ásia Oriental”, considerada como a “Doutrina Monroe Japonesa”.</p>
+                        <p>A expansão japonesa havia começado em 1895, quando venceu a China, impôs-lhe o Tratado de
+                            Shimonoseki passando a exercer tutela sobre a Coreia.</p>
+                        <p>Definida sua área de projeção, o Japão passou a ter atritos constantes com a China e a
+                            Rússia. A área de atrito passou a incluir os Estados Unidos quando os japoneses ocuparam a
+                            Manchúria, em 1931, e a seguir, a China, em 1937.</p>
+                        <p>Sobre a expansão japonesa, infere-se que:</p>
+                        <label><input type="radio" name="q3" value="a"> a) o Japão tinha uma política expansionista, na
+                            Ásia, de natureza bélica, diferente da doutrina Monroe.
+                        </label><br>
+                        <label><input type="radio" name="q3" value="b"> b) o Japão buscou promover a prosperidade da
+                            Coreia, tutelando-a à semelhança do que os EUA faziam.
+                        </label><br>
+                        <label><input type="radio" name="q3" value="c"> c) o povo japonês propôs cooperação aos Estados
+                            Unidos ao copiarem a Doutrina Monroe e proporem o desenvolvimento da Ásia.
+                        </label><br>
+                        <label><input type="radio" name="q3" value="d"> d) a China aliou-se à Rússia contra o Japão,
+                            sendo que a doutrina Monroe previa a parceria entre os dois.
+                        </label><br>
+                        <label><input type="radio" name="q3" value="e"> e) a Manchúria era território norte-americano e
+                            foi ocupado pelo Japão, originando a guerra entre os dois países.</label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+                    <div class="question">
+                        <p>4. (Enem/2008) Em discurso proferido em 17 de março de 1939, o primeiro-ministro inglês à
+                            época, Neville Chamberlain, sustentou sua posição política: </p>
+                        <blockquote cite="www.johndclare.net">
+                            <p>
+                                <i>
+                                    “Não necessito defender minhas visitas à Alemanha no
+                                    outono passado, que alternativa existia? Nada do que pudéssemos ter feito, nada do
+                                    que a
+                                    França pudesse ter feito, ou mesmo a Rússia, teria salvado a Tchecoslováquia da
+                                    destruição. Mas eu também tinha outro propósito ao ir até Munique. Era o de
+                                    prosseguir
+                                    com a política por vezes chamada de ‘apaziguamento europeu’, e Hitler repetiu o que
+                                    já
+                                    havia dito, ou seja, que os Sudetos, região de população alemã na Tchecoslováquia,
+                                    eram
+                                    a sua última ambição territorial na Europa, e que não queria incluir na Alemanha
+                                    outros
+                                    povos que não os alemães.”
+                                </i>
+                                <br>Disponível em: www.johndclare.net. Com adaptações.
+                            </p>
+                        </blockquote>
+
+                        <p>Sabendo-se que o compromisso assumido por Hitler em 1938, mencionado no texto acima, foi
+                            rompido pelo líder alemão em 1939, infere-se que</p>
+                        <label><input type="radio" name="q4" value="a"> a) Hitler ambicionava o controle de mais
+                            territórios na Europa além da região dos Sudetos.</label><br>
+                        <label><input type="radio" name="q4" value="b"> b) a aliança entre a Inglaterra, a França e a
+                            Rússia poderia ter salvado a Tchecoslováquia.</label><br>
+                        <label><input type="radio" name="q4" value="c"> c) o rompimento desse compromisso inspirou a
+                            política de ‘apaziguamento europeu’.</label><br>
+                        <label><input type="radio" name="q4" value="d"> d) a política de Chamberlain de apaziguar o
+                            líder alemão era contrária à posição assumida pelas potências aliadas.</label><br>
+                        <label><input type="radio" name="q4" value="e"> e) a forma que Chamberlain escolheu para lidar
+                            com o problema dos Sudetos deu origem a destruição da Tchecoslováquia.</label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+                    <div class="question">
+                        <p>5. (Puccamp 2018) A Segunda Guerra Mundial foi polarizada por dois grandes blocos de países,
+                            que, no início do conflito, sofreram algumas modificações em sua composição. Um importante
+                            país, em termos geopolíticos, que oscilou em sua posição no início dessa guerra, foi:</p>
+                        <label><input type="radio" name="q5" value="a"> a) a Argentina, cujo governo era simpatizante
+                            declarado do Eixo mas que, por pressão norte-americana, foi obrigado a declarar-se favorável
+                            aos Aliados e enviar tropas em colaboração.
+                        </label><br>
+                        <label><input type="radio" name="q5" value="b"> b) a Espanha, que apoiou oficialmente os Aliados
+                            até a decisão de Franco de combater os comunistas e, por conseguinte, unir-se ao Eixo.
+                        </label><br>
+                        <label><input type="radio" name="q5" value="c"> c) o Japão, simpatizante dos Aliados que, no
+                            entanto, após ser atacado por tropas russas, aliou-se aos países do Eixo.
+                        </label><br>
+                        <label><input type="radio" name="q5" value="d"> d) a Itália, que de início era resistente aos
+                            planos de expansão nazista, mas decidiu apoiar esse projeto político ao ser atacada por
+                            Inglaterra e França.
+                        </label><br>
+                        <label><input type="radio" name="q5" value="e"> e) a URSS, que mantinha um pacto de não agressão
+                            com a Alemanha, mas, diante da invasão alemã sem declaração de guerra, rompeu o acordo e
+                            combateu ao lado dos Estados Unidos e demais aliados.</label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+                    <div class="question">
+                        <p>6. (Ufrgs 2013) Entre 1939 e 1945, o mundo esteve envolvido na Segunda Guerra Mundial. A
+                            respeito dessa guerra, considere as seguintes afirmações.</p>
+
+                        <p>I. Caracterizou-se pela perseguição de vários grupos populacionais, sendo alguns deles
+                            vítimas de práticas sistemáticas de extermínio.</p>
+                        <p>II. Trouxe o enfraquecimento geral dos países europeus e o avanço do processo de
+                            descolonização, principalmente na Ásia e na África.</p>
+                        <p>III. Teve como consequência o fim da divisão ideológica mundial entre os países com sistemas
+                            políticos inspirados no liberalismo e aqueles baseados no marxismo.</p>
+
+                        <p>Quais estão corretas?</p>
+                        <label><input type="radio" name="q6" value="a"> a) Apenas I.</label><br>
+                        <label><input type="radio" name="q6" value="b"> b) Apenas II.</label><br>
+                        <label><input type="radio" name="q6" value="c"> c) Apenas I e II.</label><br>
+                        <label><input type="radio" name="q6" value="d"> d) Apenas I e III.</label><br>
+                        <label><input type="radio" name="q6" value="e"> e) Apenas II e III.</label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+                    <div class="question">
+                        <img src="src/img/historia/capitao-america.webp" alt="" height="380">
+                        <p>7. (ENEM 2012) Com sua entrada no universo dos gibis, o Capitão chegaria para apaziguar a
+                            agonia, o
+                            autoritarismo militar e combater a tirania. Claro que, em tempos de guerra, um gibi de um
+                            herói com uma bandeira americana no peito aplicando um sopapo no Fuhrer só poderia ganhar
+                            destaque, e o sucesso não demoraria muito a chegar.</p>
+                        <p>A capa da primeira edição norte-americana da revista do Capitão América demonstra sua
+                            associação com a participação dos Estados Unidos na luta contra:</p>
+                        <label><input type="radio" name="q7" value="a"> a) a Tríplice Aliança, na Primeira Guerra
+                            Mundial.
+                        </label><br>
+                        <label><input type="radio" name="q7" value="b"> b) os regimes totalitários, na Segunda Guerra
+                            Mundial.
+                        </label><br>
+                        <label><input type="radio" name="q7" value="c"> c) o poder soviético, durante a Guerra Fria.
+                        </label><br>
+                        <label><input type="radio" name="q7" value="d"> d) o movimento comunista, na Segunda Guerra do
+                            Vietnã.
+                        </label><br>
+                        <label><input type="radio" name="q7" value="e"> e) o terrorismo internacional, após 11 de
+                            setembro de 2001.</label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                </div>
+
+                <button onclick="verGabarito()">Ver Gabarito</button>
+            </div>
+
+        </div>
+    </article>
+
+    <!-- 
+    1- C
+    2- A
+    3- A
+    4- A
+    5- E
+    6- C
+    7- B
+    -->
+
+
+    <script>
+        function verGabarito() {
+            let gabarito = {
+                "q1": "c",
+                "q2": "a",
+                "q3": "a",
+                "q4": "a",
+                "q5": "e",
+                "q6": "c",
+                "q7": "b"
+            };
+
+            document.querySelectorAll(".question").forEach((perguntaDiv, index) => {
+                let nomePergunta = `q${index + 1}`;
+                let resCerta = gabarito[nomePergunta];
+                let resUser = perguntaDiv.querySelector(`input[name="${nomePergunta}"]:checked`);
+                let feedbackElement = perguntaDiv.querySelector(".feedback");
+
+                if (resUser) {
+                    if (resUser.value === resCerta) {
+                        feedbackElement.textContent = "✔ Correto!";
+                        feedbackElement.className = "feedback correct";
+                    } else {
+                        feedbackElement.textContent = `✘ Errado! Resposta certa: (${resCerta})`;
+                        feedbackElement.className = "feedback incorrect";
+                    }
+                } else {
+                    feedbackElement.textContent = "⚠ Escolha uma opção!";
+                    feedbackElement.className = "feedback incorrect";
+                }
+            });
+        }
+    </script>
+
+    <div class id="window">
+        <h2>SELECIONE: <i onclick="btnclose()" id="btn-close" class='bx bx-x'></i></h2>
+        <div class="roul">
+            <div class="slct">
+                <i class='bx bxs-videos'></i>
+                <h4>VÍDEO</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.
+                    Consequatur ipsa quod perspiciatis natus ipsum,
+                    atque
+                    suscipit minus culpa eligendi, aliquam nam autem
+                    cumque,
+                    dolorem omnis iste. Quod blanditiis soluta
+                    exercitationem.</p>
+                <a href="historiaun1.html#video">Começar</a>
+            </div>
+            <div class="slct">
+                <i class='bx bxs-microphone'></i>
+                <h4>ÁUDIO</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.
+                    Consequatur ipsa quod perspiciatis natus ipsum,
+                    atque
+                    suscipit minus culpa eligendi, aliquam nam autem
+                    cumque,
+                    dolorem omnis iste. Quod blanditiis soluta
+                    exercitationem.</p>
+                <a href="historiaun1.html#audio">Começar</a>
+            </div>
+            <div class="slct">
+                <i class='bx bx-text'></i>
+                <h4>TEXTO</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.
+                    Consequatur ipsa quod perspiciatis natus ipsum,
+                    atque
+                    suscipit minus culpa eligendi, aliquam nam autem
+                    cumque,
+                    dolorem omnis iste. Quod blanditiis soluta
+                    exercitationem.</p>
+                <a href="historiaun1.html#texto">Começar</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

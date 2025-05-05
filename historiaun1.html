@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Álgebra - Luminus</title>
+    <link rel="stylesheet" href="src/css/subjects.css">
+    <link rel="shortcut icon" href="src/img/LOGO-ILUMINUS-1.1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="src/js/sidebar.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <main>
+            <a href="index.html">
+                <img src="src/img/LOGO-ILUMINUS-1.1.png" alt>
+                LUMINUS
+            </a>
+            <span>
+                <input type="search" placeholder="Pesquisar...">
+                <i class='bx bx-search-alt-2'></i>
+            </span>
+        </main>
+        <aside>
+            <a href class="navig">Suporte</a>
+            <a href="login.html" class="btn-login"><i class='bx bxs-user'></i> Entrar</a>
+        </aside>
+    </header>
+
+    <nav id="sidebar">
+        <ul>
+            <h2>HISTÓRIA</h2>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Segunda Guerra</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <a href="historiaintro.html">
+                            <li>Introdução</li>
+                        </a>
+                        <li><button onclick="myFunction()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <a href="historiaquizz.html">
+                            <li>Quizzes e Desafios</li>
+                        </a>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Guerra Fria</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><button onclick="myFunction1()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction1()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction1()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <li><a href="historiaquizz.html">Quizzes e
+                                Desafios</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>História do Brasil</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><button onclick="myFunction2()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction2()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction2()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <li><a href="historiaquizz.html">Quizzes e
+                                Desafios</a></li>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebarbottom">
+            <a class="configs">
+                <i class='bx bxs-cog'></i> CONFIG. DO USUÁRIO
+            </a>
+            <div class="line"></div>
+            <a href="#" class="user">
+                <div class="status">
+                    <div class="iconcircle">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <b>Adicionar usuário
+                        <i class='bx bxs-user-plus'></i>
+                    </b>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <article>
+        <div id="texto">
+            <h1>Segunda Guerra</h1>
+            <p>A Segunda Guerra Mundial, ocorrida de 1939 a 1945, foi o maior conflito da história, envolvendo os
+                Aliados
+                (como Reino Unido, EUA e URSS) e o Eixo (Itália, Alemanha e Japão). Causou a morte de cerca de 60
+                milhões de
+                pessoas e grande destruição material. Sua principal causa foi o expansionismo da Alemanha nazista, e o
+                conflito começou com a invasão da Polônia em setembro de 1939. Famosa pelos horrores do Holocausto e
+                pelas
+                bombas atômicas lançadas no final da guerra.</p>
+
+            <h2>Causas da Segunda Guerra Mundial</h2>
+
+            <p>A Segunda Guerra Mundial teve como causa o expansionismo da Alemanha nazista, que emergiu após a
+                humilhação
+                da derrota na Primeira Guerra e uma crise econômica na década de 1920. A ascensão do nazismo, liderado
+                por
+                Hitler, ocorreu durante a República de Weimar. Em 1933, os nazistas assumiram o poder e começaram a
+                militarizar a Alemanha e expandir seu território, com o objetivo de criar um "espaço vital" para os
+                arianos,
+                explorando povos "inferiores".</p>
+
+            <p>Em 1938, a Alemanha anexou a Áustria (Anschluss) e, depois, começou a pressionar pela região dos Sudetos
+                na
+                Checoslováquia. A Conferência de Munique, em 1938, permitiu que Hitler tomasse os Sudetos, mas ele
+                continuou
+                suas agressões. Em 1939, a Alemanha atacou a Polônia, o que levou Reino Unido e França a declarar guerra
+                à
+                Alemanha, iniciando a Segunda Guerra Mundial.</p>
+
+            <h2>Países participantes da Segunda Guerra Mundial</h2>
+
+            <p>Aliados: Reino Unido, França, EUA e URSS (principais forças);</p>
+
+            <p>Eixo: Alemanha, Itália e Japão (principais forças).</p>
+
+            <h2>Fases da Segunda Guerra Mundial</h2>
+
+            <p>A Segunda Guerra Mundial estendeu-se por seis anos e alcançou um nível de mobilização chamado pelos
+                historiadores de guerra total. Esses anos podem ser divididos em três fases, que são:</p>
+
+            <p><i>1ª fase (1939-1941):</i> ficou marcada pela supremacia das forças alemãs e japonesas no conflito. Os
+                alemães,
+                por meio da blitzkrieg, conseguiram conquistar uma série de nações europeias. Os japoneses, por sua vez,
+                iniciaram sua expansão pelo sudeste asiático, conquistando as colônias de britânicos, franceses e
+                holandeses. Além disso, os japoneses realizaram um ataque que causou grande prejuízo aos
+                norte-americanos,
+                em Pearl Harbor.</p>
+
+            <p><i>2ª fase (1942-1943):</i> é o momento em que o quadro da Segunda Guerra começou a inverter-se. Os
+                alemães foram
+                barrados pelos soviéticos na famosa Batalha de Stalingrado, e o poder de guerra dos alemães iniciou seu
+                declínio. O mesmo aconteceu com os japoneses, que, após a derrota na Batalha de Midway, perderam parte
+                considerável do seu poder de guerra e foram sendo derrotados lentamente pelos norte-americanos.</p>
+
+            <p><i>3ª fase (1944-1945):</i> momento em que os membros do Eixo são derrotados. As forças dos Aliados na
+                Europa
+                cercaram os alemães e conduziram a invasão do território germânico na virada de 1944 para 1945. Os
+                japoneses
+                passaram a sofrer cada vez mais com os bombardeios dos EUA. Internamente o país estava em colapso, mas a
+                recusa dos japoneses em renderem-se levou os americanos a atingirem o Japão com duas bombas atômicas. A
+                derrota do Eixo trouxe o fim à guerra.</p>
+        </div>
+
+        <div id="video" class="video">
+            <iframe src="https://www.youtube.com/embed/H873fcBtxfA" title="A Segunda Guerra Mundial - Parte 1/2"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+            <iframe width="1519" height="607" src="https://www.youtube.com/embed/eFwlBRWGbKA"
+                title="A Segunda Guerra Mundial - Parte 2/2" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+            <iframe width="1519" height="607" src="https://www.youtube.com/embed/TV4Vzda09Ck"
+                title="SEGUNDA GUERRA MUNDIAL - Nostalgia História" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </article>
+
+</body>
+
+</html>

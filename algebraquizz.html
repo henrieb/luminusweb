@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Álgebra - Luminus</title>
+    <link rel="stylesheet" href="src/css/subjects.css">
+    <link rel="shortcut icon" href="src/img/LOGO-ILUMINUS-1.1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="src/js/sidebar.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <main>
+            <a href="index.html">
+                <img src="src/img/LOGO-ILUMINUS-1.1.png" alt>
+                LUMINUS
+            </a>
+            <span>
+                <input type="search" placeholder="Pesquisar...">
+                <i class='bx bx-search-alt-2'></i>
+            </span>
+        </main>
+        <aside>
+            <a href class="navig">Suporte</a>
+            <a href="login.html" class="btn-login"><i class='bx bxs-user'></i> Entrar</a>
+        </aside>
+    </header>
+
+    <nav id="sidebar">
+        <ul>
+            <h2>MATEMÁTICA</h2>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Álgebra</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <a href="algebraintro.html">
+                            <li>Introdução</li>
+                        </a>
+                        <li><button onclick="myFunction()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <a href="algebraquizz.html">
+                            <li>Quizzes e
+                                Desafios</li>
+                        </a>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Funções</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><button onclick="myFunction1()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction1()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction1()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <li><a href="algebraquizz.html">Quizzes e
+                                Desafios</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Geometria</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><button onclick="myFunction2()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction2()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction2()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <li><a href="algebraquizz.html">Quizzes e
+                                Desafios</a></li>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebarbottom">
+            <a class="configs">
+                <i class='bx bxs-cog'></i> CONFIG. DO USUÁRIO
+            </a>
+            <div class="line"></div>
+            <a href="#" class="user">
+                <div class="status">
+                    <div class="iconcircle">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <b>Adicionar usuário
+                        <i class='bx bxs-user-plus'></i>
+                    </b>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <article>
+        <div class="quiz-container">
+            <div class="title">
+                <h1>Quiz - Álgebra I</h1>
+            </div>
+            <div id="quizForm">
+                <div class="qsts">
+                    <div class="question">
+                        <p>1. (UEL) Considere os polinômios p(x) = -x + 1 e q(x) = x^3 - x. É correto afirmar:</p>
+                        <label><input type="radio" name="q1" value="a"> a) Os polinômios p(x) e q(x) não possuem raiz em
+                            comum. </label><br>
+                        <label><input type="radio" name="q1" value="b"> b) O gráfico de p(x) intercepta o gráfico de
+                            q(x). </label><br>
+                        <label><input type="radio" name="q1" value="c"> c) O polinômio p(x) possui uma raiz dupla.
+                        </label><br>
+                        <label><input type="radio" name="q1" value="d"> d) O resto da divisão de q(x) por p(x) é
+                            diferente de zero. </label><br>
+                        <label><input type="radio" name="q1" value="e"> e) O polinômio q(x) possui uma raiz dupla.
+                        </label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+
+                    <div class="question">
+                        <p>2. (Unifor) Sabe-se que o polinômio f = 2x^3 + x^2 + 4x - 2 admite uma raiz racional. As
+                            outras raízes desse polinômio são números:</p>
+                        <label><input type="radio" name="q2" value="a"> a) divisíveis por fracionários</label><br>
+                        <label><input type="radio" name="q2" value="b"> b) não-reais</label><br>
+                        <label><input type="radio" name="q2" value="c"> c) primos</label><br>
+                        <label><input type="radio" name="q2" value="d"> d) irracionais</label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+
+                    <div class="question">
+                        <p>3. (FEI-SP) Dividindo-se P(x) = 2x³ – 3x² + 8x + 3 por S(x), obtêm-se um quociente Q(x) = 2x
+                            – 1 e um resto R(x) = 3x + 5. Então S(x) é igual a:</p>
+                        <label><input type="radio" name="q3" value="a"> a) x² + x + 1</label><br>
+                        <label><input type="radio" name="q3" value="b"> b) x² – x + 1</label><br>
+                        <label><input type="radio" name="q3" value="c"> c) 2x² + 3x – 5</label><br>
+                        <label><input type="radio" name="q3" value="d"> d) x² + x – 2</label><br>
+                        <label><input type="radio" name="q3" value="e"> c) x² – x + 2</label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+
+                    <div class="question">
+                        <p>4. Dados os polinômios p(x) = 2x³ + 3x² + 1 e q(x) = 3x² + 5x – 15, a soma p(-2) + q(2) é
+                            igual a:</p>
+                        <label><input type="radio" name="q4" value="a"> a) 1 </label><br>
+                        <label><input type="radio" name="q4" value="b"> b) 2 </label><br>
+                        <label><input type="radio" name="q4" value="c"> c) 3 </label><br>
+                        <label><input type="radio" name="q4" value="d"> d) 4 </label><br>
+                        <label><input type="radio" name="q4" value="e"> e) 5 </label><br>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="separa"></div>
+
+                    <div class="question">
+                        <p>5. (Fuvest) Seja p(x) = x^4+ bx^3+ cx^2+ dx + e um polinômio com coeficientes inteiros.
+                            Sabe-se que as quatro raízes de p(x) são inteiras e que três delas são pares e uma é impar.
+                            Quantos coeficientes pares têm o polinômio p(x)?</p>
+                        <label><input type="radio" name="q5" value="a"> a) 0 </label><br>
+                        <label><input type="radio" name="q5" value="b"> b) 1 </label><br>
+                        <label><input type="radio" name="q5" value="c"> c) 2 </label><br>
+                        <label><input type="radio" name="q5" value="d"> d) 3 </label><br>
+                        <label><input type="radio" name="q5" value="e"> e) 4 </label><br>
+                        <p class="feedback"></p>
+                    </div>
+                </div>
+
+                <button onclick="verGabarito()">Ver Gabarito</button>
+            </div>
+
+        </div>
+    </article>
+
+    <div id="result"></div>
+    </div>
+
+    <!-- 1.B   2.E   3.E   4.E   5.D -->
+
+    <script>
+        function verGabarito() {
+            let gabarito = {
+                "q1": "b",
+                "q2": "e",
+                "q3": "e",
+                "q4": "e",
+                "q5": "d",
+            };
+
+            document.querySelectorAll(".question").forEach((perguntaDiv, index) => {
+                let nomePergunta = `q${index + 1}`;
+                let resCerta = gabarito[nomePergunta];
+                let resUser = perguntaDiv.querySelector(`input[name="${nomePergunta}"]:checked`);
+                let feedbackElement = perguntaDiv.querySelector(".feedback");
+
+                if (resUser) {
+                    if (resUser.value === resCerta) {
+                        feedbackElement.textContent = "✔ Correto!";
+                        feedbackElement.className = "feedback correct";
+                    } else {
+                        feedbackElement.textContent = `✘ Errado! Resposta certa: (${resCerta})`;
+                        feedbackElement.className = "feedback incorrect";
+                    }
+                } else {
+                    feedbackElement.textContent = "⚠ Escolha uma opção!";
+                    feedbackElement.className = "feedback incorrect";
+                }
+            });
+        }
+    </script>
+
+    <div class id="window">
+        <h2>SELECIONE: <i onclick="btnclose()" id="btn-close" class='bx bx-x'></i></h2>
+        <div class="roul">
+            <div class="slct">
+                <i class='bx bxs-videos'></i>
+                <h4>VÍDEO</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.
+                    Consequatur ipsa quod perspiciatis natus ipsum,
+                    atque
+                    suscipit minus culpa eligendi, aliquam nam autem
+                    cumque,
+                    dolorem omnis iste. Quod blanditiis soluta
+                    exercitationem.</p>
+                <a href="algebraun1.html#video">Começar</a>
+            </div>
+            <div class="slct">
+                <i class='bx bxs-microphone'></i>
+                <h4>ÁUDIO</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.
+                    Consequatur ipsa quod perspiciatis natus ipsum,
+                    atque
+                    suscipit minus culpa eligendi, aliquam nam autem
+                    cumque,
+                    dolorem omnis iste. Quod blanditiis soluta
+                    exercitationem.</p>
+                <a href="algebraun1.html#audio">Começar</a>
+            </div>
+            <div class="slct">
+                <i class='bx bx-text'></i>
+                <h4>TEXTO</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.
+                    Consequatur ipsa quod perspiciatis natus ipsum,
+                    atque
+                    suscipit minus culpa eligendi, aliquam nam autem
+                    cumque,
+                    dolorem omnis iste. Quod blanditiis soluta
+                    exercitationem.</p>
+                <a href="algebraun1.html#texto">Começar</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

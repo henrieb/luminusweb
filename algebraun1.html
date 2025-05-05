@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Álgebra - Luminus</title>
+    <link rel="stylesheet" href="src/css/subjects.css">
+    <link rel="shortcut icon" href="src/img/LOGO-ILUMINUS-1.1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="src/js/sidebar.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <main>
+            <a href="index.html">
+                <img src="src/img/LOGO-ILUMINUS-1.1.png" alt>
+                LUMINUS
+            </a>
+            <span>
+                <input type="search" placeholder="Pesquisar...">
+                <i class='bx bx-search-alt-2'></i>
+            </span>
+        </main>
+        <aside>
+            <a href class="navig">Suporte</a>
+            <a href="login.html" class="btn-login"><i class='bx bxs-user'></i> Entrar</a>
+        </aside>
+    </header>
+
+    <nav id="sidebar">
+        <ul>
+            <h2>MATEMÁTICA</h2>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Álgebra</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="algebraintro.html">Introdução</a></li>
+                        <li><button onclick="myFunction()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <li><a href="algebraquizz.html">Quizzes e
+                                Desafios</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Funções</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><button onclick="myFunction1()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction1()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction1()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <li><a href="algebraquizz.html">Quizzes e
+                                Desafios</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                    <span>Geometria</span>
+                    <i class='bx bx-chevron-down'></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><button onclick="myFunction2()">Un. 1: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction2()">Un. 2: Equações
+                                Algébricas</button></li>
+                        <li><button onclick="myFunction2()">Un. 3: Equações
+                                Algébricas</button></li>
+                        <li><a href="algebraquizz.html">Quizzes e
+                                Desafios</a></li>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebarbottom">
+            <a class="configs">
+                <i class='bx bxs-cog'></i> CONFIG. DO USUÁRIO
+            </a>
+            <div class="line"></div>
+            <a href="#" class="user">
+                <div class="status">
+                    <div class="iconcircle">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <b>Adicionar usuário
+                        <i class='bx bxs-user-plus'></i>
+                    </b>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <article>
+        <div id="texto">
+            <h1>Equações Algébricas</h1>
+            <h2>1.1 - POLINÔMIOS</h2>
+
+            <p>Os polinômios são expressões algébricas formadas por números (coeficientes) e letras (partes literais).
+                As
+                letras de um polinômio representam os valores desconhecidos da expressão.</p>
+            <p>Exemplos:</p>
+            <div class="spacing">
+                <i>a) 3ab + 5</i>
+                <i>b) x3 + 4xy - 2x2y3</i>
+                <i>c) 25x2 - 9y2</i>
+            </div>
+
+            <h2>Classificação dos Polinômios</h2>
+
+            <p><i>Quanto à quantidade de termos</i></p>
+
+            <p><b><i>Monômio:</i></b> Um monômio é um polinômio que possui apenas UM único termo, ou seja, é formado por
+                um número,
+                uma
+                variável ou o produto entre números e variáveis.</p>
+
+            <p>Exemplos:</p>
+            <div class="spacing">
+                <i>a) 8</i>
+                <i>b) 3x²</i>
+                <i>c) x²y4z³</i>
+                <i>d) -7a²b³</i>
+            </div>
+
+            <p><i>Propriedades dos Monômios</i></p>
+
+            <p><b>1.</b> Multiplicação de Monômios: Para multiplicarmos monômios não é necessário que eles sejam
+                semelhantes, basta multiplicarmos coeficiente com coeficiente e parte literal com parte literal. Sendo
+                que quando multiplicamos as partes literais devemos usar a propriedade da potência que diz: am.an = am+n
+                (bases iguais na multiplicação repetimos a base e somamos os expoentes).</p>
+
+            <p>Exemplo: </p>
+            <div class="spacing"><i>(3a²b).(-5ab³) = 3. (-5). a². a. b3. b = - 15. a2+1. b³+1 = -15a³b4</i></div>
+
+            <p><b>2.</b> Divisão de Monômios: Para dividirmos os monômios não é necessário que eles sejam semelhantes,
+                basta dividirmos coeficiente com coeficiente e parte literal com parte literal. Sendo que quando
+                dividirmos as partes literais devemos usar a propriedade da potência que diz: <i>am : an = am - n</i>
+                (bases iguais na divisão repetimos a base e diminuímos os expoentes), sendo que a ≠ 0.</p>
+
+            <p><i>(-20x2y3) : (- 4xy3)</i> na divisão dos dois monômios, devemos dividir os coeficientes -20 e - 4 e na
+                parte literal
+                dividirmos as que têm mesma base para que possamos usar a propriedade <i>am : am : an = am – n.</i></p>
+
+            <p>Exemplo: </p>
+            <div class="spacing"><i>(-10x²y³) / (-2xy²) = (-10/-2).(x²y³/xy²) = 5. x²-¹.y³-² = 5xy</i></div>
+
+            <p><b>3.</b> Potência de Monômios: Na potenciação de monômios, aplicamos propriedades específicas para
+                simplificar a expressão. As principais propriedades a serem usadas são:</p>
+            <p>Propriedade 1: <i>(a.b)m = am . bm</i></p>
+            <p>Propriedade 2: <i>(am)n = am.n</i></p>
+
+            <p>Exemplo: </p>
+            <div class="spacing"><i>(2x.3y³)² = (2x)² . (3y³)² = 2².x².3².(y³)² = 4.x².9.y6 = 36.x².y6 = 36x²y6</i>
+            </div>
+
+            <p><b><i>Binômio:</i></b> Um Binômio é um polinômio que possui DOIS termos, separados por um sinal de adição(+) ou subtração(-). Esses termos podem ser números, variáveis, ou uma combinação de ambos.</p>
+
+            <p>Exemplos:</p>
+            <div class="spacing">
+                <i>a) x + 1</i> <i>b) 12x² + 2z</i> <i>c) a + b</i> <i>d) 7 – 2y</i>
+            </div>
+
+            <p><i>Propriedades dos Binômios:</i></p>
+
+            <p><b>1.</b> Soma e subtração de Binômios: Para somar ou subtrair binômios, combinamos termos semelhantes</p>
+
+            <p>Exemplo:</p> <div class="spacing"><i>(3x + 4) + (x - 1) = (3x + x) + (4 - 1) = 4x + 3</i></div>
+
+            <p><b>2.</b> Multiplicação de Binômios: Para multiplicar binômios, aplicamos a propriedade distributiva ou usamos
+            formulas notáveis</p>
+
+            <p>Exemplo:</p> <div class="spacing"><i>(x+2)(x-3) = x.x + x.(-3) + 2.x + 2.(-3) = x² + -3x + 2x + -6 = x² -x - 6</i></div>
+
+            <p><b>3.</b> Quadrado de um Binômio (Fórmulas Notáveis): O quadrado de um binômio é uma fórmula notável que facilita a expansão de expressões do tipo <i>(a+b)²</i> ou <i>(a-b)²</i></p>
+
+            <p>Exemplo:</p> <div class="spacing"><i>(x+3)² = (x+3)(x+3) = x.x + x.3 + 3.x + 3.3 = x² + 3x + 3x + 9 = x² + 6x + 9</i></div>
+
+
+        </div>
+
+    </article>
+
+</body>
+
+</html>
